@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class SumOfEvenNumbers 
+{
+	public static void main(String args[])
+	{
+		int num,i,evenSum=0;
+		Scanner input=new Scanner(System.in);
+		
+		System.out.println("Enter your Number");
+		num=input.nextInt();
+		
+		for(i=1;i<num;i++)
+		{
+			if(i%2!=0)
+				continue;
+				evenSum=evenSum+i;
+		}
+		
+		System.out.println("Sum of Even Numbers upto " +num+ "="+evenSum);
+	}
+}
+
+
+Output:
+
+Enter your Number
+10
+Sum of Even Numbers upto 10=20
